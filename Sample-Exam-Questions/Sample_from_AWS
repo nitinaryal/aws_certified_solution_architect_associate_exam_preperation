@@ -1,0 +1,29 @@
+Qn 1:
+A company is deploying a new database on a new Amazon EC2 instance. The workload of this database requires a single Amazon Elastic Block Store (Amazon EBS) volume that can support up to 20,000 IOPS.
+
+Which type of EBS volume meets this requirement?
+
+1. A Throughput Optimized HDD 
+2. A Provisioned IOPS SSD 
+3. A General Purpose SSD
+4. A Cold HDD
+
+For more information about Cold HDD EBS volumes, see Amazon EBS Cold HDD Volumes.
+
+Incorrect: A Throughput Optimized HDD EBS volume  is an HDD-backed storage device that is limited to 500 IOPS for each volume.
+
+For more information about Throughput Optimized HDD EBS volumes, see Hard disk drives (HDD).
+
+Correct: A Provisioned IOPS SSD EBS volume provides up to 64,000 IOPS for each volume.
+
+For more information about Provisioned IOPS SSD EBS volumes, see Solid state drives (SSD).
+
+Incorrect: A General Purpose SSD EBS volume is limited to 16,000 IOPS for each volume.
+
+For more information about General Purpose SSD EBS volumes, see Solid state drives (SSD).
+
+Incorrect: A Cold HDD volume provides low-cost magnetic storage that defines performance in terms of throughput rather than IOPS. Cold HDD volumes are a good fit for large, sequential cold-data workloads.
+
+For more information about Cold HDD EBS volumes, see Amazon EBS Cold HDD Volumes.
+
+Qn 2:

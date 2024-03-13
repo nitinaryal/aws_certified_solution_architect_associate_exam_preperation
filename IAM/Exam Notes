@@ -1,0 +1,84 @@
+IAM is used to securely control individual and group access to AWS resources
+
+IAM makes it easy to provide multiple users secure access to AWS resources
+
+IAM can be used to manage:
+    users
+    Groups
+    Access policies
+    Roles
+    User credentials
+    User Password policies
+    Multi-factor authentication (MFA)
+    API keys for programmatic access (CLI)
+
+By default, new users are created with NO access to any AWS services - they can only login to the AWS console but will not have access to any services
+
+Permission must be explicitly granted to allow a user to access an AWS service
+
+IAM users are individuals who have been granted access to an AWS account
+
+IAM is universal (global) and does not apply to regions
+
+IAM is eventually consistent
+
+Authentication methods:
+    Console password - use to login to AWS Management Console
+    Access keys - used for programmatic access
+    Server certificates - uses SSL/TLS certificates
+
+IAM Users
+    An IAM user is an entity that represents a person or service
+    By default, users can not access anything in your account
+    Root user credentials are the email address used to create the account and a pssword
+    The root account has full administrative permissions, and these cannot be restricted
+    IAM users can be created to represent applications, and these are known as "service accounts"
+    You can have up to 5000 users per AWS account
+
+IAM Groups
+    Groups are collections of users and have policies attached to them
+    A group is not an identity and cannot be identified as a principal in an IAM policy
+    Use groups to assign permissions to users
+    Use the principal of least privilege when assigning permissions
+
+IAM Roles
+    Roles are created and then "assumed" by trusted entities
+    With IAM Roles you can delegate permissions to resources for users and services
+    IAM users or AWS services can assume a role to obtain temporary security credentials
+    Temporary security credentials are issued by the AWS Security Token Service (STS)
+
+IAM Polices
+    Policies are documents that define permissions and can be applied to users, groups and roles
+    Policy documents are written in JSON (key value pair that consists of an attribute and a value)
+    All permissions are implicitly denied by default
+    The most restrictive policy is applied
+
+Types of IAM policy
+Identity-based policies - attached to users, groups, or roles
+Resource-based policies - attached to a resource; define permissions for a principal accessing the resource
+IAM permissions boundaries - set the maximum permissions an identity-based policy can grant an IAM entity
+AWS Organizations service control policies (SCP) - specify the maximum permissions for an organization or OU
+Session policies - used with AssumeRole* API actions
+
+AWS IAM Best Practices
+    Lock away your AWS account root user access keys
+    Create individual IAM users
+    Use groups to assign permissions to IAM users
+    Grant least privilege
+    Get started using permissions with managed policies
+    Use customer managed policies instead of inline polices
+    Use access level to review IAM permission
+    Configure a strong password policy for your users
+    Enable MFA
+    Use roles for applications that run on Amazon EC2 instances
+    Use roles to delegate permissions
+    Do not share access keys
+    Rotate credentials regularly
+    Remove unnecessary credentials
+    Use policy conditions for extra security
+    Monitor activity in your AWS account
+    
+
+
+
+

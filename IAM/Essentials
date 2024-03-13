@@ -1,0 +1,17 @@
+IAM Best Practices
+
+1. Require human users to use federation with an identity provider to access AWS using temporary credentials
+2. Require workloads to use temporary credentials with IAM roles to access AWS
+3. Require multi-factor authentication (MFA)
+4. Rotate access keys regularly for use cases that require long-term credentials
+5. Safeguard your root user credentials and don't use them for everyday tasks
+6. Apply least-privilege permissions
+7. Get started with AWS managed policies and move toward least-privilege permissions
+8. Use IAM Access Analyzer to generate least-privilege policies based on access activity
+9. regularly review and remove unused users, roles, permissions, policies, and credentials
+10. Use conditions in IAM policies to further restrict  access
+11. Verify public and cross-account access to resources with IAM Access Analyzer
+12. Use IAM Access Analyzer to validate your IAM policies to ensure secure and functinal permissions
+13. Establish permissions guardrails across multiple accounts
+14. Use permissions boundaries to delegate permissions management within an account
+
